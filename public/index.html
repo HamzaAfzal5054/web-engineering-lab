@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Office hours and contact form for Web Engineering Lab 02."
+      content="Office hours and feedback form for Web Engineering Lab 02."
     />
     <title>Web Engineering Lab 02</title>
     <link rel="stylesheet" href="styles.css" />
@@ -21,7 +21,7 @@
           <li>
             <a href="#office-hours" aria-current="location">Office hours</a>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#feedback">Send Feedback</a></li>
         </ul>
       </nav>
     </header>
@@ -106,9 +106,9 @@
         <path d="M0 12H360M440 12H800" stroke="currentColor" stroke-width="2" />
         <circle cx="400" cy="12" r="5" fill="currentColor" />
       </svg>
-      <section id="contact" aria-labelledby="contact-heading">
+      <section id="feedback" aria-labelledby="feedback-heading">
         <p class="eyebrow">Start a conversation</p>
-        <h2 id="contact-heading">Contact</h2>
+        <h2 id="feedback-heading">Send Feedback</h2>
         <p>
           Use this practice form to try accessible inputs. Required fields are
           marked “required”.
@@ -129,24 +129,19 @@
             required
           />
           <fieldset>
-            <legend>Preferred meeting format</legend>
+            <legend>Topic</legend>
             <label class="radio-label"
-              ><input
-                type="radio"
-                name="meeting-format"
-                value="in-person"
-                checked
-              />
-              In person</label
+              ><input type="radio" name="topic" value="html" checked />
+              HTML</label
             >
             <label class="radio-label"
-              ><input type="radio" name="meeting-format" value="online" />
-              Online</label
+              ><input type="radio" name="topic" value="accessibility" />
+              Accessibility</label
             >
           </fieldset>
           <label for="message">Message (required)</label>
           <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit">Submit message</button>
+          <button type="submit">Send feedback</button>
           <p id="form-status" role="status"></p>
         </form>
       </section>
