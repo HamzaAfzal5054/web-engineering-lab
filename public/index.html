@@ -3,16 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Web Engineering Lab 01 greeting page" />
-    <title>Web Engineering Lab 01</title>
+    <meta
+      name="description"
+      content="Office hours and contact form for Web Engineering Lab 02."
+    />
+    <title>Web Engineering Lab 02</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="card">
-      <p class="eyebrow">Web Engineering - Lab 01</p>
-      <h1 id="greeting">Loading greeting...</h1>
-      <p>The development environment is working correctly.</p>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+      <p class="eyebrow">Web Engineering · Lab 02</p>
+      <h1 id="greeting">Hello, World!</h1>
+      <p>Semantic HTML and accessibility foundations</p>
+      <nav aria-label="Page sections">
+        <ul>
+          <li>
+            <a href="#office-hours" aria-current="location">Office hours</a>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <section id="office-hours" aria-labelledby="hours-heading">
+        <p class="eyebrow">Learn together</p>
+        <h2 id="hours-heading">Office hours</h2>
+        <p>Bring your questions about HTML, CSS, and accessible web design.</p>
+        <figure>
+          <svg
+            role="img"
+            aria-labelledby="clock-title"
+            viewBox="0 0 48 48"
+            width="48"
+            height="48"
+          >
+            <title id="clock-title">
+              Clock representing scheduled office hours
+            </title>
+            <circle
+              cx="24"
+              cy="24"
+              r="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+            <path
+              d="M24 12v12l9 6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+          <figcaption>
+            Weekly opportunities to ask questions and get help.
+          </figcaption>
+        </figure>
+        <div class="table-scroll">
+          <table>
+            <caption>
+              Weekly office hours schedule — sample lab data
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Start</th>
+                <th scope="col">End</th>
+                <th scope="col">Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Monday</th>
+                <td><time datetime="10:00">10:00 AM</time></td>
+                <td><time datetime="11:00">11:00 AM</time></td>
+                <td>Web lab</td>
+              </tr>
+              <tr>
+                <th scope="row">Wednesday</th>
+                <td><time datetime="14:00">2:00 PM</time></td>
+                <td><time datetime="15:00">3:00 PM</time></td>
+                <td>Web lab</td>
+              </tr>
+              <tr>
+                <th scope="row">Friday</th>
+                <td><time datetime="09:00">9:00 AM</time></td>
+                <td><time datetime="10:00">10:00 AM</time></td>
+                <td>Online</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <svg
+        class="divider"
+        aria-hidden="true"
+        focusable="false"
+        viewBox="0 0 800 24"
+      >
+        <path d="M0 12H360M440 12H800" stroke="currentColor" stroke-width="2" />
+        <circle cx="400" cy="12" r="5" fill="currentColor" />
+      </svg>
+      <section id="contact" aria-labelledby="contact-heading">
+        <p class="eyebrow">Start a conversation</p>
+        <h2 id="contact-heading">Contact</h2>
+        <p>
+          Use this practice form to try accessible inputs. Required fields are
+          marked “required”.
+        </p>
+        <form>
+          <label for="name">Name (required)</label>
+          <input id="name" name="name" autocomplete="name" required />
+          <label for="email">Email (required)</label>
+          <p id="email-hint" class="hint">
+            Use an email address in the format name@example.com.
+          </p>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            aria-describedby="email-hint"
+            required
+          />
+          <fieldset>
+            <legend>Preferred meeting format</legend>
+            <label class="radio-label"
+              ><input
+                type="radio"
+                name="meeting-format"
+                value="in-person"
+                checked
+              />
+              In person</label
+            >
+            <label class="radio-label"
+              ><input type="radio" name="meeting-format" value="online" />
+              Online</label
+            >
+          </fieldset>
+          <label for="message">Message (required)</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Submit message</button>
+          <p id="form-status" role="status"></p>
+        </form>
+      </section>
     </main>
+    <footer>
+      <p>Web Engineering Lab 02</p>
+      <address>
+        Sample lab contact: <a href="mailto:lab@example.com">lab@example.com</a>
+      </address>
+    </footer>
     <script type="module" src="script.js"></script>
   </body>
 </html>
