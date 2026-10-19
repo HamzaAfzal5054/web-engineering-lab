@@ -1,6 +1,6 @@
 import { greet } from "./greet.js";
 
-document.querySelector("#greeting").textContent = greet("World");
+document.querySelector("#greeting").textContent = greet("Hamza Afzal");
 const links = [...document.querySelectorAll("nav a")];
 const sections = links.map((link) => document.querySelector(link.hash));
 function updateLocation() {

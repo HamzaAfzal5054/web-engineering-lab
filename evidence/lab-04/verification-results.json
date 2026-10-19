@@ -1,0 +1,25 @@
+{
+  "errors": [],
+  "order": [
+    "1 start",
+    "4 end",
+    "3 promise",
+    "2 timeout"
+  ],
+  "mobile": {
+    "overflow": false,
+    "columns": "330.406px"
+  },
+  "audits": {
+    "light": {
+      "media": "light",
+      "score": 1,
+      "failures": []
+    },
+    "dark": {
+      "media": "dark",
+      "score": 1,
+      "failures": []
+    }
+  }
+}
