@@ -17,6 +17,7 @@
   :root {
     color-scheme: light dark;
     --space: 1rem;
+    --color-error: light-dark(oklch(45% 0.2 25), oklch(75% 0.15 25));
     --color-bg: light-dark(oklch(98% 0.01 255), oklch(20% 0.02 255));
     --color-text: light-dark(oklch(25% 0.02 255), oklch(94% 0.01 255));
     --color-accent: light-dark(oklch(45% 0.18 255), oklch(75% 0.12 255));
@@ -50,6 +51,14 @@
   }
 }
 @layer components {
+  .error {
+    display: block;
+    color: var(--color-error);
+    margin-block-end: 1rem;
+  }
+  input[aria-invalid="true"] {
+    border-color: var(--color-error);
+  }
   header,
   main,
   footer {

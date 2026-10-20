@@ -1,0 +1,7 @@
+{
+  "structuralAccepted": true,
+  "missingPropertiesRejected": true,
+  "wrongDelayRejected": true,
+  "noEmitOnErrorVerified": true,
+  "fixedBuildPasses": true
+}

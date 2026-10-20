@@ -1,0 +1,30 @@
+
+> web-engineering-lab@1.0.0 typecheck
+> tsc --noEmit
+
+node_modules/@typescript/typescript-darwin-arm64/lib/lib.dom.d.ts(43618,13): error TS2451: Cannot redeclare block-scoped variable 'status'.
+src/feedback.ts(2,19): error TS18047: 'form' is possibly 'null'.
+src/feedback.ts(3,20): error TS18047: 'form' is possibly 'null'.
+src/feedback.ts(4,7): error TS2451: Cannot redeclare block-scoped variable 'status'.
+src/feedback.ts(5,20): error TS7006: Parameter 'input' implicitly has an 'any' type.
+src/feedback.ts(5,27): error TS7006: Parameter 'message' implicitly has an 'any' type.
+src/feedback.ts(14,3): error TS18047: 'form' is possibly 'null'.
+src/feedback.ts(15,3): error TS18047: 'form' is possibly 'null'.
+src/feedback.ts(17,1): error TS18047: 'form' is possibly 'null'.
+src/feedback.ts(20,16): error TS18047: 'nameInput' is possibly 'null'.
+src/feedback.ts(20,26): error TS2339: Property 'value' does not exist on type 'Element'.
+src/feedback.ts(21,17): error TS18047: 'emailInput' is possibly 'null'.
+src/feedback.ts(21,28): error TS2339: Property 'value' does not exist on type 'Element'.
+src/feedback.ts(32,12): error TS2339: Property 'textContent' does not exist on type 'string'.
+src/feedback.ts(33,5): error TS18047: 'form' is possibly 'null'.
+src/greet.ts(1,23): error TS7006: Parameter 'name' implicitly has an 'any' type.
+src/main.ts(5,1): error TS18047: 'tbody' is possibly 'null'.
+src/main.ts(6,18): error TS18047: 'event.target' is possibly 'null'.
+src/main.ts(6,31): error TS2339: Property 'closest' does not exist on type 'EventTarget'.
+src/main.ts(7,19): error TS18047: 'tbody' is possibly 'null'.
+src/main.ts(11,3): error TS18047: 'status' is possibly 'null'.
+src/main.ts(19,3): error TS18047: 'status' is possibly 'null'.
+src/script.ts(3,1): error TS2531: Object is possibly 'null'.
+src/script.ts(5,66): error TS2339: Property 'hash' does not exist on type 'Element'.
+src/script.ts(13,14): error TS2339: Property 'hash' does not exist on type 'Element'.
+src/utils.ts(1,23): error TS7006: Parameter 'ms' implicitly has an 'any' type.

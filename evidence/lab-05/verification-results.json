@@ -1,0 +1,64 @@
+{
+  "url": "http://127.0.0.1:8766/web-engineering-lab/public/",
+  "viewports": [
+    "1440x1100",
+    "390x844"
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:8766/web-engineering-lab/public/",
+    "http://127.0.0.1:8766/web-engineering-lab/public/styles.css",
+    "http://127.0.0.1:8766/web-engineering-lab/public/script.js",
+    "http://127.0.0.1:8766/web-engineering-lab/public/main.js",
+    "http://127.0.0.1:8766/web-engineering-lab/public/feedback.js",
+    "http://127.0.0.1:8766/web-engineering-lab/public/utils.js",
+    "http://127.0.0.1:8766/web-engineering-lab/public/greet.js",
+    "http://127.0.0.1:8766/web-engineering-lab/public/",
+    "http://127.0.0.1:8766/web-engineering-lab/public/styles.css",
+    "http://127.0.0.1:8766/web-engineering-lab/public/script.js",
+    "http://127.0.0.1:8766/web-engineering-lab/public/main.js",
+    "http://127.0.0.1:8766/web-engineering-lab/public/feedback.js",
+    "http://127.0.0.1:8766/web-engineering-lab/public/greet.js",
+    "http://127.0.0.1:8766/web-engineering-lab/public/utils.js"
+  ],
+  "jqueryAbsent": true,
+  "emptyErrors": 2,
+  "validResets": true,
+  "keyboardBookingAndCancellation": true,
+  "mobile": {
+    "overflow": false,
+    "gridColumns": "330.406px"
+  },
+  "helpers": {
+    "missing": "Missing element: #does-not-exist",
+    "counters": [
+      1,
+      2,
+      1
+    ]
+  },
+  "audits": {
+    "light": {
+      "score": 1,
+      "media": "light",
+      "errorCount": 2,
+      "failures": []
+    },
+    "dark": {
+      "score": 1,
+      "media": "dark",
+      "errorCount": 2,
+      "failures": []
+    }
+  },
+  "navigationAudits": {
+    "light": {
+      "score": 1,
+      "media": "light"
+    },
+    "dark": {
+      "score": 1,
+      "media": "dark"
+    }
+  }
+}

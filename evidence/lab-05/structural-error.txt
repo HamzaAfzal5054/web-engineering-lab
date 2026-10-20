@@ -1,0 +1,5 @@
+
+> web-engineering-lab@1.0.0 build
+> tsc
+
+src/main.ts(32,14): error TS2739: Type '{ day: string; }' is missing the following properties from type 'Slot': start, end, room

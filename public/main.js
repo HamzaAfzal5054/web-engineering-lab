@@ -1,22 +1,39 @@
-import { delay, makeCounter } from "./utils.js";
+import { delay, makeCounter, getRequired, describeSlot, } from "./utils.js";
+const slots = [
+    { day: "Monday", start: "10:00", end: "11:00", room: "Web lab" },
+    { day: "Wednesday", start: "14:00", end: "15:00", room: "Web lab" },
+    { day: "Friday", start: "09:00", end: "10:00", room: "Online" },
+];
+const status = getRequired("#status");
+const tbody = getRequired("#schedule tbody");
 const nextBooking = makeCounter();
-const status = document.querySelector("#status");
-const tbody = document.querySelector("#schedule tbody");
 tbody.addEventListener("click", async (event) => {
-  const button = event.target.closest("button[data-day]");
-  if (!button || !tbody.contains(button) || button.disabled) return;
-  const day = button.dataset.day;
-  const row = button.closest("tr");
-  button.disabled = true;
-  status.textContent = `Updating ${day}…`;
-  await delay(1000);
-  const selected = row.classList.toggle("selected");
-  button.setAttribute("aria-pressed", String(selected));
-  button.textContent = selected ? "Cancel" : "Select";
-  button.setAttribute("aria-label", `${selected ? "Cancel" : "Select"} ${day}`);
-  button.disabled = false;
-  const count = document.querySelectorAll("#schedule tr.selected").length;
-  status.textContent = selected
-    ? `Booking #${nextBooking()} confirmed for ${day}. ${count} slot(s) booked.`
-    : `${day} booking cancelled. ${count} slot(s) booked.`;
+    const target = event.target;
+    if (!(target instanceof Element))
+        return;
+    const button = target.closest("button[data-day]");
+    const row = target.closest("tr");
+    if (button === null ||
+        row === null ||
+        !tbody.contains(button) ||
+        button.disabled)
+        return;
+    const slot = slots.find((s) => s.day === button.dataset.day);
+    if (slot === undefined)
+        return;
+    const hadFocus = document.activeElement === button;
+    button.disabled = true;
+    status.textContent = `Updating ${slot.day}…`;
+    await delay(1000);
+    const booked = row.classList.toggle("selected");
+    button.setAttribute("aria-pressed", String(booked));
+    button.textContent = booked ? "Cancel" : "Select";
+    button.setAttribute("aria-label", `${booked ? "Cancel" : "Select"} ${slot.day}`);
+    button.disabled = false;
+    if (hadFocus && document.activeElement === document.body)
+        button.focus();
+    const count = document.querySelectorAll("#schedule tr.selected").length;
+    status.textContent = booked
+        ? `Booking #${nextBooking()} confirmed: ${describeSlot(slot)}. ${count} of ${slots.length} slots booked.`
+        : `Booking for ${slot.day} cancelled. ${count} of ${slots.length} slots booked.`;
 });

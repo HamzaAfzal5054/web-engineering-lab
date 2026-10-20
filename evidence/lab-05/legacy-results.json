@@ -1,0 +1,16 @@
+{
+  "jquery": "3.7.1",
+  "requests": [
+    "http://127.0.0.1:8766/lab05/legacy-public/",
+    "http://127.0.0.1:8766/lab05/legacy-public/styles.css",
+    "http://127.0.0.1:8766/lab05/legacy-public/script.js",
+    "http://127.0.0.1:8766/lab05/legacy-public/main.js",
+    "https://code.jquery.com/jquery-3.7.1.min.js",
+    "http://127.0.0.1:8766/lab05/legacy-public/legacy-feedback.js",
+    "http://127.0.0.1:8766/lab05/legacy-public/greet.js",
+    "http://127.0.0.1:8766/lab05/legacy-public/utils.js"
+  ],
+  "errorsRemoved": true,
+  "reset": true,
+  "success": "Thanks, Hamza Afzal! Your feedback was received."
+}
