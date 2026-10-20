@@ -18,8 +18,3 @@ function updateLocation() {
 window.addEventListener("scroll", updateLocation, { passive: true });
 window.addEventListener("resize", updateLocation);
 updateLocation();
-document.querySelector("form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  document.querySelector("#form-status").textContent =
-    "Your practice form passed validation. This demo does not send or store messages.";
-});
