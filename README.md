@@ -1,3 +1,24 @@
+# Web Engineering Labs
+
+Hamza Afzal · 2430-0176
+
+## Lab 09 Next.js
+
+The complete Lab 09 app is in `web/`.
+
+```sh
+cd web
+npm ci
+npm run build
+npm start
+```
+
+Open http://localhost:3000. See [the app README](web/README.md) for tasks, verification and storage scope, [AI usage](AI-USAGE.md), [evidence](evidence/lab-09/) and [reports](reports/).
+
+## Earlier labs
+
+The original Lab 05 app, source, tests and evidence are retained at the repository root.
+
 # Web Engineering Lab 05
 
 Hamza Afzal · 2430-0176

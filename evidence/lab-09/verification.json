@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-24",
+  "next": "16.4.6",
+  "react": "19.3.0",
+  "build": "pass",
+  "lint": "pass",
+  "typecheck": "pass",
+  "browser": "Codex in-app browser and VS Code integrated browser",
+  "home_source": "h1 is in raw HTTP HTML",
+  "slots_source": "two table rows in raw HTTP HTML",
+  "no_javascript": "Temporary local proxy added CSP script-src none. Both rows remain visible and booking click leaves aria-pressed false.",
+  "booking": "Enter selected Monday; Space cancelled Monday; click selected Wednesday; reload reset both.",
+  "feedback_before_fix": "JSON saved first message; page and reload showed Messages (0).",
+  "feedback_after_fix": "After revalidatePath restoration and production rebuild, second submit immediately showed Messages (2). Reload preserved both.",
+  "validation": "Empty form focused Name; whitespace-only submission did not change message count.",
+  "mobile": "390 x 844 CSS pixels confirmed by DOM; document width 390, no document overflow. Office table scrolls within its container.",
+  "console": "No warning or error logs in the main production tab.",
+  "github_runtime_data": "web/data/feedback.json is ignored by Git",
+  "known_warning": "Two retained lab lockfiles cause a Next.js workspace-root inference warning. Build and start pass with the required empty config.",
+  "storage_scope": "Local JSON teaching implementation; single-process writable disk; no multi-instance guarantee."
+}

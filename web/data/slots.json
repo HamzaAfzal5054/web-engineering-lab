@@ -1,0 +1,14 @@
+[
+  {
+    "day": "Monday",
+    "start": "10:00",
+    "end": "11:00",
+    "room": "Room 214"
+  },
+  {
+    "day": "Wednesday",
+    "start": "14:00",
+    "end": "15:00",
+    "room": "Room 214"
+  }
+]

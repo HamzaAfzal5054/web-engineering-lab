@@ -1,0 +1,4 @@
+
+> web-engineering-lab-09@0.1.0 typecheck
+> tsc --noEmit
+
